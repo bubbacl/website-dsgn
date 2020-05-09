@@ -1,0 +1,353 @@
+/* ========= GENERALES ========= */
+* {
+	font-family: 'Muli', sans-serif;
+}
+img {
+	width: 100%;
+}
+
+/* ========= HEADER ========= */
+.header {
+	padding: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.header .header-logo {
+	width: 140px;
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	.header .header-logo {
+		width: 120px;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header .header-menu {
+		display: flex;
+	}
+}
+
+.header .header-menu a {
+	display: block;
+	margin: 24px auto;
+	text-align: center;
+	color: #495057;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.header .header-menu a.active {
+	color: #7048e8;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+	.header .header-menu a {
+		display: inline-block;
+		margin: 0 16px;
+	}
+}
+
+
+.header .header-menu a:hover{
+	color: #7048e8;
+	transition: all .3s;
+}
+
+/* ========= CONTAINER ========= */
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+/* ========= HOME: BIENVENIDA ========= */
+.home .home-hero {
+	padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.home .home-hero {
+		padding: 80px 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 24px;
+		align-items: center;
+	}
+}
+
+.home .home-hero .home-hero-img {
+	margin-bottom: 32px;
+}
+
+.home .home-hero .home-hero-img img {
+		width: 90%;
+		margin: 0 auto;
+		display: block;
+}
+
+@media screen and (min-width: 768px) {
+	.home .home-hero .home-hero-img {
+		order: 2;
+		margin-bottom: 0;
+	}
+
+	.home .home-hero .home-hero-img img {
+		width: 80%;
+		margin-left: auto;
+		display: block;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.home .home-hero .home-hero-text {
+		order: 1;
+	}
+}
+
+.home .home-hero .title {
+	color: #7048e8;
+	font-weight: 800;
+	font-size: 38px;
+	margin-bottom: 16px;
+}
+
+.home .home-hero .subtitle {
+	color: #343a40;
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 16px;
+	line-height: 32px;
+}
+
+.home .home-hero .cta-btn {
+	display: inline-block;
+	background-color: #7048e8;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 20px;
+	padding: 16px 32px;
+	text-decoration: none;
+	border-radius: 40px;
+	box-shadow: 0 4px 32px rgba(112, 72, 232, .4);
+	transition: all .3s;
+}
+
+.home .home-hero .cta-btn:hover {
+	background-color: #5f3dc4;
+	box-shadow: 0 8px 40px rgba(112, 72, 232, .5);
+	transition: all .3s; 
+}
+
+/* ========= CARACTERÍSTICAS ========= */
+.home .home-features {
+	padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.home .home-features {
+		padding: 80px 0;
+	}
+}
+
+.home .home-features .title {
+	color: #7048e8;
+	font-weight: 600;
+	font-size: 32px;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.home .home-features .subtitle {
+	color: #495057;
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.home .home-features .features-cards {
+	margin-top: 48px;
+}
+
+@media screen and (min-width: 768px) {
+	.home .home-features .features-cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 40px;
+	}
+}
+
+.home .home-features .card {
+	border-radius: 20px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, .3);
+	margin-bottom: 32px;
+}
+
+.home .home-features .card-img img {
+	border-radius: 20px;
+}
+
+.home .home-features .card-body {
+	padding: 24px;
+}
+
+.home .home-features .card-body .card-title {
+	color: #7048e8;
+	font-size: 26px;
+	margin-bottom: 16px;
+}
+
+.home .home-features .card-body .card-text {
+	color: #868e96;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+/* ========= ACERCA ========= */
+.home .home-about {
+	padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.home .home-about {
+		padding: 80px 0;
+	}
+}
+
+.home .home-about .about-card {
+	background-color: #7048E8;
+	border-radius: 20px;
+	padding: 32px;
+}
+
+@media screen and (min-width: 768px) {
+	.home .home-about .about-card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 48px 32px;
+		background-image: url('../img/dsgn-about.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.home .home-about .about-card .title {
+	color: #ffffff;
+	font-size: 32px;
+	margin-bottom: 16px;
+}
+
+.home .home-about .about-card .title span{
+	font-weight: 800;
+}
+
+.home .home-about .about-card .subtitle {
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+/* ========= PORTAFOLIO: BIENVENIDA ========= */
+.portfolio .portfolio-hero {
+	padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.portfolio .portfolio-hero {
+		padding: 80px 0;
+	}
+}
+
+.portfolio .portfolio-hero .portfolio-hero-text {
+	text-align: center;
+}
+
+.portfolio .portfolio-hero .title {
+	color: #7048e8;
+	font-weight: 800;
+	font-size: 38px;
+	margin-bottom: 16px;
+}
+
+.portfolio .portfolio-hero .subtitle {
+	color: #343a40;
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 16px;
+	line-height: 32px;
+}
+
+/* ========= FOOTER ========= */
+.footer {
+	padding: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.footer .footer-brand {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.footer .footer-logo {
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+	opacity: .5;
+}
+
+.footer .footer-copyright {
+	text-align: center;
+	font-size: 16px;
+	color: #343a40;
+	margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	.footer .footer-copyright {
+		margin-top: 0;
+		margin-left: 16px;
+	}
+}
+
+.footer .footer-credit {
+	text-align: center;
+	font-size: 14px;
+	color: #868e96;
+	margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+	.footer .footer-credit {
+		margin-top: 0;
+	}
+}
+
+.footer .footer-credit a{
+	color: #7048E8;
+	text-decoration: none;
+}
