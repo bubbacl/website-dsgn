@@ -46,7 +46,7 @@ img {
 	font-size: 16px;
 	letter-spacing: 1px;
 	text-decoration: none;
-	transition: all .3s;
+	transition: color .3s;
 }
 
 .header .header-menu a.active {
@@ -64,7 +64,7 @@ img {
 
 .header .header-menu a:hover{
 	color: #7048e8;
-	transition: all .3s;
+	transition: color .3s;
 }
 
 /* ========= CONTAINER ========= */
@@ -137,22 +137,28 @@ img {
 }
 
 .home .home-hero .cta-btn {
-	display: inline-block;
+	display: block;
 	background-color: #7048e8;
 	color: #ffffff;
+	padding: 16px 32px;
 	font-weight: 400;
 	font-size: 20px;
-	padding: 16px 32px;
 	text-decoration: none;
+	text-align: center;
 	border-radius: 40px;
 	box-shadow: 0 4px 32px rgba(112, 72, 232, .4);
-	transition: all .3s;
+	transition: background-color .3s, box-shadow .3s;
+}
+@media screen and (min-width: 768px) {
+	.home .home-hero .cta-btn  {
+		display: inline-block;
+	}
 }
 
 .home .home-hero .cta-btn:hover {
 	background-color: #5f3dc4;
 	box-shadow: 0 8px 40px rgba(112, 72, 232, .5);
-	transition: all .3s; 
+	transition: background-color .3s, box-shadow .3s;
 }
 
 /* ========= CARACTERÍSTICAS ========= */
@@ -303,7 +309,7 @@ img {
 
 /* ========= FOOTER ========= */
 .footer {
-	padding: 16px 0;
+	padding: 32px 0;
 }
 
 @media screen and (min-width: 768px) {
