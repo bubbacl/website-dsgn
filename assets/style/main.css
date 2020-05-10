@@ -77,12 +77,14 @@ img {
 
 /* ========= HOME: BIENVENIDA ========= */
 .home .home-hero {
-	padding: 40px 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
 	.home .home-hero {
-		padding: 80px 0;
+		padding-top: 80px;
+		padding-bottom: 80px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 24px;
@@ -155,12 +157,14 @@ img {
 
 /* ========= CARACTERÍSTICAS ========= */
 .home .home-features {
-	padding: 40px 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
 	.home .home-features {
-		padding: 80px 0;
+		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 }
 
@@ -220,12 +224,14 @@ img {
 
 /* ========= ACERCA ========= */
 .home .home-about {
-	padding: 40px 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
 	.home .home-about {
-		padding: 80px 0;
+		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 }
 
@@ -265,12 +271,14 @@ img {
 
 /* ========= PORTAFOLIO: BIENVENIDA ========= */
 .portfolio .portfolio-hero {
-	padding: 40px 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
 	.portfolio .portfolio-hero {
-		padding: 80px 0;
+		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 }
 
